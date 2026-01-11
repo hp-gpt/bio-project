@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>Verification</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<form>
+    <center>
+        <label style="font-size:60px; font-family: Itim;">Code</label><br>
+        <input type="password" placeholder="Enter code" style="font-size:40px;font-family: Itim;text-align:center;" id="pswd"><br>
+   
+<button onclick="checkPassword(event)">Go</button>
+ </center>
+</form>
+
+<body></body>
+
+</html>
+<script>
+function checkPassword(event) {
+    event.preventDefault(); // This stops the page from refreshing
+    const password = document.getElementById("pswd").value;
+    
+    if (password === "dumbass") {
+        window.location.assign("weightcheck.html"); // Try .assign() for better compatibility
+    } else {
+        alert("Wrong password!");
+    }
+}
+</script>
