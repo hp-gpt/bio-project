@@ -1,0 +1,132 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        input,
+        label,
+        form,
+        select {
+            font-family: Itim;
+            font-size: 16px;
+        }
+
+
+        body {
+            padding: 50px;
+        }
+    </style>
+    <title> Submitting Weight </title>
+</head>
+
+<body>
+    <div class="header"><img src="https://i.postimg.cc/FH2kkyrJ/logo.png" style="height: 80px; float:left;">The Waste
+        Warriors <img src="https://i.postimg.cc/FH2kkyrJ/logo.png" style="float: right;height: 80px;"></div>
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <span> &nbsp;</span>
+            <span aria-hidden="true"> Join our mission to create a sustainable future! By donating your waste today, you
+                play a vital role in helping us make the earth vibrant, healthy, and green again!  &nbsp;</span>
+        </div>
+    </div>
+
+    <div class="marquee-container">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                Join our mission to create a sustainable future! By donating your waste today, you play a vital role in
+                helping us make the earth vibrant, healthy, and green again!   &nbsp;
+            </div>
+            <!-- The "Mirror" duplicate that removes the gap -->
+            <div class="marquee-content" aria-hidden="true">
+                Join our mission to create a sustainable future! By donating your waste today, you play a vital role in
+                helping us make the earth vibrant, healthy, and green again!   &nbsp;
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar-link">
+            <a href="index.html"><img src="https://i.postimg.cc/26x1tg4y/home.png"> <a href="index.html"> </a>
+
+                Home
+        </div>
+
+        <div class="sidebar-link">
+            <a href="wastedonate.html"><img src="https://i.postimg.cc/cJwgRvCY/wastedonate.png"> <a
+                    href="wastedonate.html"> </a>
+                Waste Donation
+        </div>
+        <div class="sidebar-link">
+            <a href="about.html"><img src="https://i.postimg.cc/FH2kkyrJ/logo.png"> </a>
+            About
+        </div>
+    </div>
+
+    <div class="form">
+        <form id="AKfycbyMgeX-lJLzFugXCz2rpdVy-9zdlL_VKrVSPqXsWj1cMrCO8UOH09tQudZ32ImlPeDIng" method="POST"
+            action="https://script.google.com/macros/s/AKfycbyMgeX-lJLzFugXCz2rpdVy-9zdlL_VKrVSPqXsWj1cMrCO8UOH09tQudZ32ImlPeDIng/exec">
+            <div class="student-info">
+                <div class="student-id">
+                    Student ID: <br>
+                    <input type="text" name="StudentID" placeholder="ID Number" required><br>
+                </div>
+                <wbsp>
+                    <wbsp>
+                        <div class="student-name">
+                            Student Name: <br>
+                            <input type="text" name="StudentName" placeholder="Full Name" required><br>
+                        </div>
+
+
+            </div>
+
+            <div class="waste-info">
+                <div class="waste-type">
+                    Waste Type: <br>
+                    <input type="radio" name="WasteType" value="Plastic" class="wastetype" required>
+                    <span>Plastic</span>
+                    <input type="radio" name="WasteType" value="Paper"> <span>Paper</span><br>
+                    <input type="radio" name="WasteType" value="Metal"> <span>Metal(Cans</span>
+                    <input type="radio" name="WasteType" value="E-Waste"> <span>E-Waste</span><br>
+                </div>
+                <br><br>
+                <div class="waste-weight">
+                    Weight of Waste <br>
+                    <input type="number" name="Weight" required>
+                </div>
+            </div>
+
+            <div class="school-info">
+                <div class="house">
+                    School House: <br>
+                    <input type="radio" name="SchoolHouse" value="Flamingo" required> <span>Flamingo</span>
+                    <input type="radio" name="SchoolHouse" value="Falcon"> <span>Falcon</span><br>
+                    <input type="radio" name="SchoolHouse" value="Oryx"> <span>Oryx</span>
+                    <input type="radio" name="SchoolHouse" value="Gazelle"> <span>Gazelle</span><br>
+                </div>
+                <!-- 2. Grade Dropdown -->
+                <div class="grade">
+                    Grade Level: <br>
+                    <select name="StudentGrade" required>
+                        <option value="" disabled selected>Select Grade</option>
+                        <option value="6">Grade 6</option>
+                        <option value="7">Grade 7</option>
+                        <option value="8">Grade 8</option>
+                        <option value="9">Grade 9</option>
+                        <option value="10">Grade 10</option>
+                        <option value="11">Grade 11</option>
+                        <option value="12">Grade 12</option>
+                    </select>
+                </div>
+            </div>
+            <div class="submit-button"><button type="submit" class="button">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="front-logo"><img src="https://i.postimg.cc/FH2kkyrJ/logo.png"></div>
+</body>
+
+</html>
